@@ -85,6 +85,12 @@ body {
   gap: 1rem;
 }
 
+a {
+  text-decoration: underline;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
 /* Button Styles*/
 .btn {
   padding: 0.75rem 1.5rem;
