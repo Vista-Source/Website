@@ -1,6 +1,6 @@
 :root {
   --accent-color: #71bfff;
-  --background-color: #262626;
+  --background-color: #141414;
   --secondary-color: #333333;
   --text-color: #ffffff;
 }
@@ -9,21 +9,27 @@ body {
   margin: 0;
   font-family: "poppins", sans-serif;
   background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 /* Header Styles */
 
 .header {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  padding: 1rem 0;  /* vertical padding only */
+  z-index: 9999;
+}
+
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
-  position: sticky;
-  top: 0;
-  padding: 1rem;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  z-index: 9999;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .header img {
