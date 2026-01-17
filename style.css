@@ -1,6 +1,7 @@
 :root {
   --accent-color: #a5daff;
   --background-color: #262626;
+  --secondary-color: #333333;
   --text-color: #ffffff;
 }
 
@@ -8,4 +9,18 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: var(--background-color);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  z-index: 9999;
+}
+
+.header img {
+  height: 48px;
+  width: auto;
 }
