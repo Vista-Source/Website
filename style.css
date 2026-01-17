@@ -3,6 +3,8 @@
   --background-color: #141414;
   --secondary-color: #333333;
   --text-color: #ffffff;
+
+  --content-size: 1200px;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
   position: sticky;
   top: 0;
   background-color: var(--background-color);
-  padding: 1rem 0;  /* vertical padding only */
+  padding: 1rem 0;
   z-index: 9999;
 }
 
@@ -27,7 +29,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  max-width: 1200px;
+  max-width: var(--content-size);
   margin: 0 auto;
   width: 100%;
 }
@@ -51,4 +53,16 @@ body {
 
 .nav a:hover {
   color: var(--accent-color);
+}
+
+/* Content Styles */
+.sized-content {
+  max-width: var(--content-size);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem 0;
 }
