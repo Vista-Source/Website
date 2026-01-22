@@ -124,6 +124,12 @@ a {
 }
 
 /* Blog Styles*/
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
 .blog-card {
   background: #0f0f0f;
