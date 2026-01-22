@@ -125,40 +125,76 @@ a {
 
 /* Blog Styles*/
 
-.blog-entry {
-  width: fit-content;
-  padding: 1.5rem;
+.blog-card {
+  background: #0f0f0f;
+  border-radius: 20px;
+  border: #333333 solid 1px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 420px;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.blog-card-link {
+  color: inherit;
   text-decoration: none;
-  background-color: #161616;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   display: block;
-  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.blog-entry:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-}
-
-.blog-entry a {
-  text-decoration: none;
-}
-
-.blog-entry h1 {
-  margin: 0 0 0.5rem 0;
-}
-
-.blog-entry p {
-  font-weight: normal;
-  line-height: 1.5;
-  margin: 0 0 1rem 0;
-}
-
-.blog-entry img {
-  border-radius: 10px;
-  margin-bottom: 1rem;
+.blog-card-image img {
+  width: 100%;
+  height: 200px;
   object-fit: cover;
+  display: block;
+}
+
+.blog-card-content {
+  padding: 1.5rem;
+}
+
+.blog-card-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card-tags span {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #1b1b1b;
+  color: #cfcfcf;
+}
+
+.blog-card h2 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.blog-card-subtitle {
+  margin: 0 0 1rem 0;
+  color: #9a9a9a;
+  font-size: 0.95rem;
+}
+
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #7d7d7d;
+}
+
+.blog-card-meta .arrow {
+  margin-left: auto;
+  font-size: 1.1rem;
+  color: #bdbdbd;
 }
 
 /* FAQ Styles */

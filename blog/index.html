@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -33,13 +34,32 @@
         <div class="sized-content">
             <h1>Blog</h1>
 
-            <div class="blog-entry">
-                <a href="jan-18/" class="blog-link">
-                    <img src="jan-18/images/thumb.png" alt="January 18th Update" />
-                    <h1>January 18th Update</h1>
-                    <p>Public development begins!</p>
-                </a>
-            </div>
+            <article class="blog-card">
+            <a href="jan-18/" class="blog-card-link">
+                <div class="blog-card-image">
+                <img src="jan-18/images/thumb.png" alt="January 18th Update">
+                </div>
+
+                <div class="blog-card-content">
+                <div class="blog-card-tags">
+                    <span>Development Update</span>
+                </div>
+
+                <h2>January 18th Update</h2>
+                <p class="blog-card-subtitle">Public development begins!</p>
+
+                <div class="blog-card-meta">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>January 18, 2026</span>
+                    <span>•</span>
+                    <i class="fa-regular fa-clock"></i>
+                    <span>1 min read</span>
+                    <span class="arrow">→</span>
+                </div>
+                </div>
+            </a>
+            </article>
+        </div>
     </main>
 </body>
 </html>
